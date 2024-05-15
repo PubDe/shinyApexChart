@@ -1,0 +1,14 @@
+Package: shinyApexChart
+Type: Package
+Title: Apex Charts for Shiny app (Donut chart, Radial bar, circle gague)
+Version: 0.1.0
+Author: PubDe
+Maintainer: Pubudu_Dehigolla <pubududehigolla@gmail.com>
+Description: Provides functions to create interactive charts using ApexCharts 
+    library. Includes functions to generate donut charts, radial bar charts, and 
+    circle gauges with customizable options.
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports:
