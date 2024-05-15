@@ -1,18 +1,3 @@
----
-output: github_document
----
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
 # shinyApexChart
 
 <!-- badges: start -->
@@ -38,21 +23,19 @@ devtools::install_github("PubDe/shinyApexChart")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+``` r 
 library(shinyApexChart)
 
-df <- data.frame(
-  Lables = c("Team A", "Team B", "Team C", "Team D", "Team E", "Team F"),
-  Series = c(44, 55, 41, 17, 15, 45)
-)
-
 # Create a donut chart
-donutChart("id", df, TRUE, "chart_title")
+# donutChart("id", dataframe, data_labels_enabled, chart_title)
+donutChart("id", dataframe, TRUE, "chart_title")
 
 # Create a radial bar chart
-radialChart("id", df, "#FF00FF")
+# radialChart("id", dataframe, color_hex)
+radialChart("id", dataframe, "#FF00FF")
 
 # Create a circle gauge
+# circleGauge("id", value)
 circleGauge("id", 78)
 ```
 
@@ -60,4 +43,13 @@ circleGauge("id", 78)
 Contributions to shinyApexChart are welcome! If you encounter any bugs, have feature requests, or want to contribute enhancements or fixes, please open an issue or submit a pull request on the GitHub repository.
 
 ## License
-ChartPackage is released under the MIT License. See the LICENSE file for details.
+
+ - [MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Acknowledgements
+
+ - [Apex Charts javascript library](https://apexcharts.com/docs/installation/)
+
+
+
